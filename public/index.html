@@ -26,6 +26,12 @@
         border: 1px solid #fafbfc;
         border-radius: 5px;
       }
+      form {
+        background-color: #24292e;
+        margin: 0 auto;
+        padding: 1rem;
+        width: 50%;
+      }
     </style>
     <title>Document</title>
   </head>
@@ -37,8 +43,12 @@
       method="POST"
       enctype="multipart/form-data"
     >
-      <input type="file" name="photo" id="photo" />
-      <button type="submit">Upload</button>
+      <fieldset>
+        <legend>Photo Upload</legend>
+        <p>Maximum file size: 5MB</p>
+        <input type="file" name="picture" id="photo" />
+        <button type="submit">Upload</button>
+      </fieldset>
     </form>
   </body>
 </html>
